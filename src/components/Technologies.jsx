@@ -1,135 +1,80 @@
-import { PiAngularLogo } from "react-icons/pi"
-import { RiBootstrapLine, RiCss3Line, RiHtml5Line, RiJavascriptLine, RiNodejsLine, RiTailwindCssFill } from "react-icons/ri"
-import { SiMongodb, SiTypescript } from "react-icons/si"
-import { TbSql } from "react-icons/tb"
-import { motion } from "framer-motion"
-import { BsUbuntu } from "react-icons/bs"
-import { FaAws } from "react-icons/fa6"
+import { PiAngularLogo } from "react-icons/pi";
+import {
+    RiBootstrapLine,
+    RiCss3Line,
+    RiHtml5Line,
+    RiJavascriptLine,
+    RiNodejsLine,
+    RiTailwindCssFill,
+} from "react-icons/ri";
+import { SiMongodb, SiTypescript } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { BsUbuntu } from "react-icons/bs";
+import { FaAws } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-    initial: { y: -10 },
-    animate: {
-        y: [10, -10],
+const iconVariants = {
+    initial: { x: -100, opacity: 0 },
+    animate: (i) => ({
+        x: [0, 50, 0], // Smooth left-to-right movement
+        opacity: 1,
         transition: {
-            duration: duration,
-            ease: "linear",
+            duration: 5, // Slow movement duration
+            ease: "easeInOut",
+            delay: i * 0.5, // Delay for sequential animation
             repeat: Infinity,
             repeatType: "reverse",
-        }
-    }
-})
+        },
+    }),
+};
 
 const Technologies = () => {
+    const icons = [
+        { Icon: PiAngularLogo, color: "text-red-600", name: "Angular" },
+        { Icon: RiCss3Line, color: "text-blue-500", name: "CSS3" },
+        { Icon: RiHtml5Line, color: "text-orange-500", name: "HTML5" },
+        { Icon: RiJavascriptLine, color: "text-yellow-400", name: "JavaScript" },
+        { Icon: SiTypescript, color: "text-blue-600", name: "TypeScript" },
+        { Icon: RiTailwindCssFill, color: "text-sky-400", name: "Tailwind CSS" },
+        { Icon: RiBootstrapLine, color: "text-indigo-500", name: "Bootstrap" },
+        { Icon: SiMongodb, color: "text-green-600", name: "MongoDB" },
+        { Icon: RiNodejsLine, color: "text-green-500", name: "NodeJs" },
+        { Icon: TbSql, color: "text-blue-700", name: "SQL" },
+        { Icon: BsUbuntu, color: "text-orange-500", name: "Ubuntu" },
+        { Icon: FaAws, color: "text-orange-400", name: "AWS" },
+    ];
+
     return (
         <div className="pb-24">
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0.2, y: -100 }}
                 transition={{ duration: 1.5 }}
-                className="my-20 text-center text-4xl"> Technologies</motion.h2>
-            <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transistion={{ duration: 1.5 }}
-                className="flex flex-wrap items-center justify-center gap-4">
-                 
-                 <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(3)}>
-                    <PiAngularLogo className="text-7xl text-custom-purple-600" />
-                </motion.div> 
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(8)}
-                    className="p-4">
-                    <RiCss3Line className="text-7xl text-red-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(8)}
-                    className="p-4">
-                    <RiHtml5Line className="text-7xl text-red-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(8)}
-                    className="p-4">
-                    <RiJavascriptLine className="text-7xl text-red-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(8)}
-                    className="p-4">
-                    <SiTypescript className="text-7xl text-red-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(2.5)}>
-                    <RiTailwindCssFill className="text-7xl text-sky-400" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(4)}
-                    className="p-4">
-                    <RiBootstrapLine className="text-7xl  text-blue-600" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(6)}
-                    className="p-4">
-                    <SiMongodb className="text-7xl text-green-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(5)}
-                    className="p-4">
-                    <RiNodejsLine className="text-7xl text-green-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(7)}
-                    className="p-4">
-                    <TbSql className="text-7xl text-yellow-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(8)}
-                    className="p-4">
-                    <BsUbuntu className="text-7xl text-red-500" />
-                </motion.div>
-
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(8)}
-                    className="p-4">
-                    <FaAws className="text-7xl text-red-500" />
-                </motion.div>
-
-            </motion.div>
+                className="my-20 text-center text-4xl"
+            >
+                Technologies
+            </motion.h2>
+            <div className="flex flex-wrap items-center justify-center gap-8">
+                {icons.map(({ Icon, color, name }, index) => (
+                    <motion.div
+                        key={index}
+                        custom={index}
+                        initial="initial"
+                        animate="animate"
+                        variants={iconVariants}
+                        className="relative group"
+                    >
+                        {/* Icon */}
+                        <Icon className={`cursor-pointer text-5xl ${color}`} />
+                        {/* Tooltip */}
+                        <div className="absolute bottom-12 left-1/2 transform cursor-pointer -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm rounded-lg px-3 py-1 transition-opacity duration-300">
+                            {name}
+                        </div>
+                    </motion.div>
+                ))}
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Technologies
+export default Technologies;

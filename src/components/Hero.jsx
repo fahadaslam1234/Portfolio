@@ -1,4 +1,4 @@
-import profilePic from "../assets/download.webp"
+import profilePic from "../assets/profile.jpg"
 import { HERO_CONTENT } from "../constants"
 import { motion } from "framer-motion"
 
@@ -21,15 +21,15 @@ const childVariants = {
 
 const Hero = () => {
     return (
-        <div className="pb-4 lg:mb-24">
-            <div className="flex flex-wrap lg:flex-row-reverse">
+        <div className="flex items-center justify-between pb-4 lg:mb-24">
+            <div className="w-full flex items-center justify-between flex-wrap lg:flex-row-reverse">
                 <div className="w-full lg:w-1/2">
-                    <div className="flex justify-center lg:p-8">
+                    <div className="flex justify-center lg:p-4">
                         <motion.img src={profilePic}
                             alt="Fahad Aslam"
                             className="border border-stone-900 rounded-3xl"
-                            width={500}
-                            height={650}
+                            width={400}
+                            height={400}
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1 }} />
@@ -40,29 +40,44 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         variants={containerVariants}
-                        className="flex flex-col items-center lg:items-start mt-10">
+                        className="flex flex-col items-center mt-10">
                         <motion.h3
                             variants={childVariants}
-                            className="pb-2 text-2xl tracking-tighter lg:text-6xl"> Rao Fahad Aslam</motion.h3>
+                            className="pb-2 text-4xl tracking-tighter lg:text-6xl"> Rao Fahad Aslam</motion.h3>
                         <motion.span
                             variants={childVariants}
-                            className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl
+                            className="bg-gradient-to-r from-gray-500 to-stone-600 bg-clip-text text-3xl
                  tracking-tighter text-transparent">Full Stack Developer</motion.span>
                         <motion.p
                             variants={childVariants}
                             className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"> {HERO_CONTENT}</motion.p>
                         <motion.a
                             variants={childVariants}
-                            href="../assets/Fahad Aslam (Software Engineer).pdf"
+                            href="../assets/Fahad_Aslam_Software_Engineer.pdf"
                             target="_blank"
-                            rel="noopener noreferer"
-                            download
-                            className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10">
-                            Download Resume
+                            rel="noopener noreferrer"
+                            download="Fahad_Aslam_Software_Engineer.pdf"
+                            className="bg-gradient-to-r from-gray-500 to-blue-700 text-white font-semibold rounded-full px-8 py-3 flex items-center justify-center gap-2 shadow-lg hover:from-blue-500 hover:to-gray-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-5 h-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-3-3m3 3l3-3m-6 9h12" />
+                            </svg>
+                            Download CV
                         </motion.a>
+
+
+
                     </motion.div>
 
                 </div>
+
             </div>
         </div>
     )

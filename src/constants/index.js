@@ -1,10 +1,31 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+import A1 from "../assets/projects/A-1.png";
+import A2 from "../assets/projects/A-2.png";
+import A3 from "../assets/projects/A-3.png";
+import A4 from "../assets/projects/A-4.png";
+import DE1 from "../assets/projects/DE-1.png";
+import DE2 from "../assets/projects/DE-2.png";
+import DE3 from "../assets/projects/DE-3.png";
+import DE4 from "../assets/projects/DE-4.png";
+import DE5 from "../assets/projects/DE-5.png";
+import JC1 from "../assets/projects/JC-1.png";
+import JC2 from "../assets/projects/JC-2.png";
+import JC3 from "../assets/projects/JC-3.png";
+import JC4 from "../assets/projects/JC-4.jpg";
+import JC5 from "../assets/projects/JC-5.jpg";
+import JC6 from "../assets/projects/JC-6.jpg";
+import JC7 from "../assets/projects/JC-7.jpg";
+import JC8 from "../assets/projects/JC-8.jpg";
+import MMBL1 from "../assets/projects/MMBL-1.jpg";
+import MMBL2 from "../assets/projects/MMBL-2.jpg";
+import MMBL3 from "../assets/projects/MMBL-3.jpg";
+import MMBL4 from "../assets/projects/MMBL-4.jpg";
+import FLM1 from "../assets/projects/FLM-1.png";
+import FLM2 from "../assets/projects/FLM-2.png";
+import MSLM1 from "../assets/projects/Mslm1.jpg";
+import MSLM2 from "../assets/projects/Mslm2.jpg";
 
-export const HERO_CONTENT = `Software Engineer with 4 years of experience in front-end and full-stack development, skilled in Angular, Node.js, MongoDB, 
-SQL, and Material UI. Proficient in building scalable applications, workflow automation, and responsive interfaces, with expertise in ITSM and 
+export const HERO_CONTENT = `Software Engineer with 4 years of experience in full-stack development and low-code applications, skilled in Angular, NodeJS, MongoDB, 
+SQL, Aws, Material UI and ServiceNow. Proficient in building scalable applications, workflow automation, and responsive interfaces, with expertise in ITSM and 
 data visualization. Certified in Angular and ITSM, I specialize in delivering innovative solutions, optimizing processes, and 
 crafting impactful software tailored to business needs.`;
 
@@ -16,19 +37,19 @@ export const EXPERIENCES = [
     role: "Senior Software Engineer",
     company: "Jazz (Telecommunication)",
     description: `Led projects utilizing Angular 17, Node.js, Python, HTML5, CSS3, Bootstrap, and Material UI, focusing on IT service management, SLA optimization, and workflow automation. Delivered impactful solutions such as Fuel Management Systems, Preventive Maintenance Projects, and Inventory Management Systems.`,
-    technologies: ["Angular 17", "Node.js", "Python", "Material UI", "SQL"],
+    technologies: ["Angular 17", "NodeJS", "Python", "Material-UI", "SQL", "MongoDB", "ServiceNow"],
   },
   {
     year: "Jul 2021 - Sep 2022",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     company: "TechnoGenics",
-    description: `Specialized in designing and implementing front-end components with Angular, JavaScript, and Bootstrap. Delivered projects like e-commerce platforms, data visualization dashboards, and quiz platforms, enhancing user engagement and streamlining workflows.`,
-    technologies: ["Angular", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+    description: `During my tenure at TechnoGenics, I contributed significantly to front-end development using Angular 14, HTML5, CSS3, Bootstrap, WordPress, JavaScript ES6, Node.js, SQL, and MongoDB. I developed an e-commerce website with seamless payment integration, a responsive coding forum, an engaging online quiz platform, and customized WordPress blogs, enhancing user experience and data management.`,
+    technologies: ["Angular", "Bootstrap", "HTML5", "CSS3","NodeJS","MongoDB","Express"]
   },
   {
-    year: "May 2020 - May 2021",
-    role: "Freelancer",
-    company: "Fiverr",
+    year: "May 2019 - May 2021",
+    role: "Web Developer",
+    company: "CincoTech",
     description: `Developed tailored websites, landing pages, and custom automation scripts for clients using HTML5, CSS3, JavaScript, and PHP. Customized WordPress themes and plugins to meet specific requirements, delivering responsive and user-friendly designs.`,
     technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "PHP"],
   },
@@ -38,46 +59,62 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "DermEase",
-    images: [project1, project2],
+    images: [DE4,DE5],
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "A fully functional e-commerce website with advanced features like product listing, shopping cart, user authentication, AI-powered recommendations, skin disease prediction models, and integrated video calling for dermatologist consultations.",
     technologies: [
       "HTML",
       "CSS",
       "Boostrap",
       "Tailwind",
       "Angular",
-      "Node.js",
+      "NodeJS",
       "MongoDB",
       "Python",
       "Web Sockets",
+      "Aws",
     ],
+      githubLink: "https://github.com/fahadaslam1234"
   },
   {
-    title: "Task Management App",
-    images: [project2],
+    title: "AI-Bot",
+    images: [A1,A2,A3,A4],
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["HTML", "CSS", "Bootstrap","Material UI" ,"Angular", "NodeJS", "MongoDB", "Express","Python"],
   },
   {
-    title: "Portfolio Website",
-    images: [project3],
+    title: "PRISM Service Desk",
+    images: [MMBL1,MMBL2,MMBL3,MMBL4],
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Delivered impactful solutions using Angular 17, Material UI, SQL, and NodeJS, ensuring seamless deployment on AWS and Nginx for optimized performance and scalability. Additionally, developed a data visualization dashboard utilizing ngx-charts and Chart.js, providing interactive and insightful visual analytics to enhance decision-making processes.",
+    technologies: ["Angular", "NestJS" , "SQL" , "Express", "Chart.js" ,"Ngx-Charts", "Bootstrap","Material UI"],
   },
   {
-    title: "Blogging Platform",
-    images: [project4],
+    title: "JazzCash Konnect",
+    images: [JC3,JC5],
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["HTML", "CSS", "Material UI","Bootstrap", "Angular","Rxjs","NgRx"],
+  },
+  {
+    title: "Fuel Management System",
+    images: [FLM1,FLM2],
+    description:
+      "Handled stored procedures and developed complex SQL queries to manage system data effectively. Designed and implemented a dynamic dashboard in Angular using Chart.js and ngx-charts, providing interactive data visualization and actionable insights for efficient system monitoring.",
+    technologies: ["HTML", "CSS", "Bootstrap", "Angular", "Material UI","Chart.js","Ngx-Charts", "SQL", "NodeJS"],
+  },
+  {
+    title: "MSLM Blog",
+    images: [MSLM1,MSLM2],
+    description:
+      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    technologies: ["HTML", "CSS", "Bootstrap", "Angular", "Material UI"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Hail Street, Al Taawun, Riyadh",
+  phoneNo: "+966 569245562 ",
+  email: "raofahad949@gmail.com",
 };
