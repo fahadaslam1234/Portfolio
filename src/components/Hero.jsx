@@ -1,6 +1,7 @@
 import profilePic from "../assets/profile.jpg"
 import { HERO_CONTENT } from "../constants"
 import { motion } from "framer-motion"
+import resumeFile from "../assets/Fahad_Aslam_Software_Engineer.pdf";
 
 const containerVariants = {
     hidden: { opacity: 0, x: -100 },
@@ -46,17 +47,16 @@ const Hero = () => {
                             className="pb-2 text-4xl tracking-tighter lg:text-6xl"> Rao Fahad Aslam</motion.h3>
                         <motion.span
                             variants={childVariants}
-                            className="bg-gradient-to-r from-gray-500 to-stone-600 bg-clip-text text-3xl
+                            className="bg-gradient-to-r from-gray-400 to-stone-500 bg-clip-text text-3xl
                  tracking-tighter text-transparent">Full Stack Developer</motion.span>
                         <motion.p
                             variants={childVariants}
                             className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"> {HERO_CONTENT}</motion.p>
                         <motion.a
                             variants={childVariants}
-                            href="../assets/Fahad_Aslam_Software_Engineer.pdf"
+                            href={resumeFile}
                             target="_blank"
                             rel="noopener noreferrer"
-                            download="Fahad_Aslam_Software_Engineer.pdf"
                             className="bg-gradient-to-r from-gray-500 to-blue-700 text-white font-semibold rounded-full px-8 py-3 flex items-center justify-center gap-2 shadow-lg hover:from-blue-500 hover:to-gray-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
                         >
                             <svg
@@ -69,8 +69,9 @@ const Hero = () => {
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-3-3m3 3l3-3m-6 9h12" />
                             </svg>
-                            Download CV
+                            View Resume
                         </motion.a>
+
 
 
 

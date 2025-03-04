@@ -33,7 +33,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "Oct 2022 - Dec 2024",
+    year: "Oct 2022 - Feb 2025",
     role: "Senior Software Engineer",
     company: "Jazz (Telecommunication)",
     description: `Led projects utilizing Angular 17, Node.js, Python, HTML5, CSS3, Bootstrap, and Material UI, focusing on IT service management, SLA optimization, and workflow automation. Delivered impactful solutions such as Fuel Management Systems, Preventive Maintenance Projects, and Inventory Management Systems.`,
@@ -71,6 +71,7 @@ export const PROJECTS = [
       "NodeJS",
       "MongoDB",
       "Python",
+      "VGG16",
       "Web Sockets",
       "Aws",
     ],
@@ -82,13 +83,15 @@ export const PROJECTS = [
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "Bootstrap","Material UI" ,"Angular", "NodeJS", "MongoDB", "Express","Python"],
+    githubLink: "https://github.com/fahadaslam1234"
   },
   {
     title: "PRISM Service Desk",
     images: [MMBL1,MMBL2,MMBL3,MMBL4],
     description:
       "Delivered impactful solutions using Angular 17, Material UI, SQL, and NodeJS, ensuring seamless deployment on AWS and Nginx for optimized performance and scalability. Additionally, developed a data visualization dashboard utilizing ngx-charts and Chart.js, providing interactive and insightful visual analytics to enhance decision-making processes.",
-    technologies: ["Angular", "NestJS" , "SQL" , "Express", "Chart.js" ,"Ngx-Charts", "Bootstrap","Material UI"],
+    technologies: ["Angular", "NodeJS" , "SQL" , "Express", "Chart.js" ,"Ngx-Charts", "Bootstrap","Material UI"],
+    githubLink: "https://github.com/fahadaslam1234"
   },
   {
     title: "JazzCash Konnect",
@@ -96,6 +99,7 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Material UI","Bootstrap", "Angular","Rxjs","NgRx"],
+    githubLink: "https://github.com/fahadaslam1234"
   },
   {
     title: "Fuel Management System",
@@ -103,6 +107,7 @@ export const PROJECTS = [
     description:
       "Handled stored procedures and developed complex SQL queries to manage system data effectively. Designed and implemented a dynamic dashboard in Angular using Chart.js and ngx-charts, providing interactive data visualization and actionable insights for efficient system monitoring.",
     technologies: ["HTML", "CSS", "Bootstrap", "Angular", "Material UI","Chart.js","Ngx-Charts", "SQL", "NodeJS"],
+    githubLink: "https://github.com/fahadaslam1234"
   },
   {
     title: "MSLM Blog",
@@ -110,6 +115,7 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Bootstrap", "Angular", "Material UI"],
+    githubLink: "https://github.com/fahadaslam1234"
   },
 ];
 

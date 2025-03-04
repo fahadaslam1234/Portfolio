@@ -18,14 +18,14 @@ const Navbar = () => {
           <FaLinkedin />
          </a>
 
-         <a href="https://www.linkedin.com/in/rao-fahad-aslam-b69a91155/"
+         <a href="https://github.com/fahadaslam1234"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Github"
          >
           <FaGithub />
          </a>
-         <a href="https://www.linkedin.com/in/rao-fahad-aslam-b69a91155/"
+         <a href="https://www.instagram.com/faa_di/#"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -33,7 +33,7 @@ const Navbar = () => {
           <FaInstagram />
          </a>
 
-         <a href="https://www.linkedin.com/in/rao-fahad-aslam-b69a91155/"
+         <a href="https://x.com/RaoFahadAslam2"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
